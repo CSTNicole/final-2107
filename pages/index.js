@@ -57,7 +57,7 @@ export default function Home() {
         <div className={styles.searchbar}>
 
           {/* <TextField id="outlined-basic" label="Outlined" variant="outlined"/> */}
-
+          <Search />
         </div>
 
         <div className={styles.footer}>
