@@ -35,7 +35,10 @@ export default function login() {
                 <input type='text' value={password} onChange={handlePassword}/>
             </p>
 
-            <button onClick={handleLogin}>login</button>
+            <div className={styles.loginBtn}>
+                <button onClick={handleLogin}>login</button>
+            </div>
+               
         </div>
     )
 }
