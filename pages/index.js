@@ -4,13 +4,13 @@ import * as React from 'react'
 import { useState } from 'react'
 import Image from 'next/image'
 import sample from '../public/images/sample.png'
-import TextField  from '@mui/material/TextField'
+import Link from 'next/link'
+//import TextField  from '@mui/material/TextField'
+
+import Search from '../src/components/searchbar'
 
 
 export default function Home() {
-  
-  // const [username, setUsername] = useState('')
-  // const [password, setPassword] = useState('')
 
   return (
     <div className={styles.container}>
@@ -18,19 +18,25 @@ export default function Home() {
         
         <div className={styles.p1}>
         <p>
-          UPLOAD  
+          <Link href='/firstpage'>
+          UPLOAD
+          </Link>
         </p>
         </div>
 
         <div className={styles.p2}>
         <p>
-          SCARVES  
+          <Link href='/secondpage'>
+          SCARVES
+          </Link>
         </p>
         </div>
 
         <div className={styles.p3}>
         <p>
-          ABOUT US  
+          <Link href='/thirdpage'>
+          ABOUT US
+          </Link>
         </p>
         </div>
         
@@ -40,16 +46,22 @@ export default function Home() {
 
         </div>
 
+        <div className={styles.login}>
+            <p>
+              <Link href='/loginpage'>
+              Login
+              </Link>
+            </p>
+        </div>
+
         <div className={styles.searchbar}>
 
-          <TextField id="outlined-basic" label="Outlined" variant="outlined"/>
+          {/* <TextField id="outlined-basic" label="Outlined" variant="outlined"/> */}
 
         </div>
 
         <div className={styles.footer}>
           
-             
-    
         </div>
       </div>
     </div>
